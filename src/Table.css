@@ -1,0 +1,102 @@
+.table-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.table-container h2 {
+  margin-bottom: 1.5rem;
+  color: #e0e0e0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: linear-gradient(145deg, #1e1e2e, #2a2a3e);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.data-table thead {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+}
+
+.data-table th {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.data-table td {
+  padding: 1rem 1.5rem;
+  color: #d1d5db;
+  border-bottom: 1px solid #3a3a4a;
+}
+
+.data-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.data-table tbody tr:hover {
+  background-color: rgba(99, 102, 241, 0.1);
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.badge.developer {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+
+.badge.designer {
+  background: rgba(236, 72, 153, 0.2);
+  color: #ec4899;
+}
+
+.badge.manager {
+  background: rgba(251, 191, 36, 0.2);
+  color: #fbbf24;
+}
+
+.badge.qa-engineer {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+}
+
+@media (prefers-color-scheme: light) {
+  .table-container h2 {
+    color: #1f2937;
+  }
+  
+  .data-table {
+    background: linear-gradient(145deg, #f8fafc, #f1f5f9);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .data-table td {
+    color: #374151;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .data-table tbody tr:hover {
+    background-color: rgba(99, 102, 241, 0.05);
+  }
+}
+
